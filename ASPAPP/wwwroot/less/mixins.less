@@ -1,0 +1,138 @@
+.setBody(){
+    margin: 0 auto;
+    padding: 0;
+}
+
+.setBodyForRatchet(){
+    margin: 0 auto;
+    padding: 0;
+    position: static;
+}
+
+.setWidth(@w){
+    width: @w;
+}
+
+.setHeight(@h){
+    height: @h;
+}
+
+.setBGColor(@color){
+    background-color: @color;
+}
+
+.setBGImage(@img){
+    background-image: url("../images/@{img}");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.setListBulletImg(@img){
+    list-style-image: url("../images/@{img}");
+}
+
+.setBoxShadow(@horizontal, @vertical, @blur, @color){
+    box-shadow: @horizontal @vertical @blur @color
+}
+
+.setFontFamily(@font){
+    font-family: @font;
+}
+
+.setFontStyle(@font, @color, @size){
+    font-family: @font;
+    font-size: @size;
+    color: @color;
+}
+
+.setFontWeight(@weight){
+    font-weight: @weight;
+}
+
+.setFontSize(@size){
+    font-size: @size;
+}
+
+.align(@pos){
+    text-align: @pos;
+}
+
+.alignBlock(){
+    margin: 0 auto;
+    display: block;
+}
+
+.viewElement(@status){
+    display: @status;
+}
+
+.adjustContainer(@container, @padding){
+    @{container}{
+        padding-top: @padding;
+    }
+}
+
+.createSection(@height,@bgColor){
+    .setHeight(@height);
+    .setBGColor(@bgColor);
+}
+
+.createSection(@height,@bgColor,@bgImage){
+    .setHeight(@height);
+    .setBGColor(@bgColor);
+    .setBGImage(@bgImage);
+}
+
+.createFullHeightSection(@bgColor,@bgImage){
+    .setHeight(100vh);
+    .setBGColor(@bgColor);
+    .setBGImage(@bgImage);
+}
+
+.setFontBundle(@font-family,@font-size,@color,@align){
+    color: @color;
+    .setFontFamily(@font-family);
+    .setFontSize(@font-size);
+    .align(@align);
+}
+
+.setGradient(@bgAsset, @color1, @color2){
+    background: -webkit-gradient(
+            linear, 0% 0%, 100% 100%,
+            color-stop(0, @color1),
+            color-stop(1, @color2))
+    ,url('../images/@{bgAsset}');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.setGradientWithoutAssets(@color1, @color2){
+    background: -webkit-gradient(
+            linear, 0% 0%, 100% 100%,
+            color-stop(0, @color1),
+            color-stop(1, @color2))
+}
+
+.createBlockColumn(){
+    .setWidth(50%);
+    .setHeight(100%);
+    float: left;
+    position: relative;
+}
+
+.createPhantomButton(@width,@height,@color,@font){
+    .setWidth(@width);
+    .setHeight(@height);
+    .align(center);
+    border: 4px solid @color;
+    cursor: pointer;
+
+    a{
+        .setFontBundle(@font, 1.2em, @color, center);
+        line-height: 1cm;
+        text-decoration: none;
+    }
+}
+

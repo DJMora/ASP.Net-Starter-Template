@@ -1,0 +1,147 @@
+/*
+    LESS entry point
+    Please feel free to modify it.
+    You should import all your less files 
+    in this main file so Gulp can stream it
+    and compile it as app.css, a file located
+    in your css folder.
+*/
+/*This file holds general imports for all Less files*/
+@font-face {
+  font-family: Logobloqo;
+  src: url(../fonts/Logobloqo.ttf);
+}
+@font-face {
+  font-family: OpenSans-Light;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: CM;
+  src: url(../fonts/CM.ttf);
+}
+@font-face {
+  font-family: Awesome;
+  src: url(../fonts/Awesome.ttf);
+}
+@font-face {
+  font-family: Rakoon;
+  src: url(../fonts/Rakoon_PersonalUse.ttf);
+}
+@font-face {
+  font-family: Poetsen;
+  src: url(../fonts/PoetsenOne-Regular.ttf);
+}
+@font-face {
+  font-family: Curves;
+  src: url(../fonts/Curves.otf);
+}
+@font-face {
+  font-family: Ventography;
+  src: url(../fonts/Ventography.ttf);
+}
+@font-face {
+  font-family: LemonMilk;
+  src: url(../fonts/LemonMilk.otf);
+}
+@font-face {
+  font-family: Baltar;
+  src: url(../fonts/baltar.ttf);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url(../fonts/RobotoCondensed-Light.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: Egregio;
+  src: url(../fonts/EgregioScript_demo.ttf);
+}
+@font-face {
+  font-family: Aquawax;
+  src: url(../fonts/Aquawax%20Black%20Trial.ttf);
+}
+@font-face {
+  font-family: BoldFont;
+  src: url(../fonts/theboldfont.ttf);
+}
+@font-face {
+  font-family: BigJohn;
+  src: url(../fonts/BIG%20JOHN.otf);
+}
+@font-face {
+  font-family: SlimJoe;
+  src: url(../fonts/Slim%20Joe.otf);
+}
+@font-face {
+  font-family: Brig;
+  src: url(../fonts/Brig.ttf);
+}
+@font-face {
+  font-family: AzedoBold;
+  src: url(../fonts/Azedo-Bold.otf);
+}
+@font-face {
+  font-family: AzedoLight;
+  src: url(../fonts/Azedo-Light.otf);
+}
+@font-face {
+  font-family: DK;
+  src: url(../fonts/DK.ttf);
+}
+@font-face {
+  font-family: Yeah;
+  src: url(../fonts/YeahPapa.ttf);
+}
+body {
+  background-color: #7c1ca5;
+}
+h1,
+h3 {
+  font-family: 'Segoe UI';
+  font-weight: lighter;
+  color: #fff;
+}
+h1 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 32px;
+  text-align: justify;
+}
+.row div[class^='col']:first-of-type h1 {
+  padding-top: 19px;
+  text-align: center;
+  font-size: 12em;
+}
+.navbar {
+  background-color: transparent;
+  border: 0;
+  padding-top: 24px;
+}
+.navbar li {
+  margin: 0;
+}
+.navbar a {
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+  color: #fff;
+}
+.navbar a img {
+  width: 24px;
+  height: 24px;
+}
+.navbar a:hover {
+  background-color: transparent !important;
+}
+#main-message .container {
+  padding-top: 178px;
+}

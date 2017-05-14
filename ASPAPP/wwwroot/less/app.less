@@ -1,0 +1,70 @@
+﻿/*
+    LESS entry point
+    Please feel free to modify it.
+    You should import all your less files 
+    in this main file so Gulp can stream it
+    and compile it as app.css, a file located
+    in your css folder.
+*/
+
+@import 'header.less';
+
+body {
+    .setBGColor(#7c1ca5);
+}
+
+h1,h3{
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    color:#fff;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 32px;
+    .align(justify);
+}
+
+.row div[class^='col']:first-of-type {
+    h1 {
+        padding-top: 19px;
+        .align(center);
+        .setFontSize(12em);
+    }
+}
+
+.navbar {
+    .setBGColor(transparent);
+    border: 0;
+    padding-top: 24px;
+
+    li {
+        margin: 0;
+    }
+
+    a {
+        .setWidth(32px);
+        .setHeight(32px);
+        text-decoration: none;
+        color: #fff;
+
+        img {
+            .setWidth(24px);
+            .setHeight(24px);
+        }
+    }
+
+    a:hover {
+        .setBGColor(transparent) !important;
+    }
+}
+
+#main-message{
+    .container{
+        padding-top: 178px;
+    }
+}
